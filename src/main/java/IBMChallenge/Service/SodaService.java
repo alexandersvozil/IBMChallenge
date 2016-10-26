@@ -5,6 +5,7 @@ import com.socrata.api.Soda2Consumer;
 import com.socrata.builders.SoqlQueryBuilder;
 import com.socrata.exceptions.SodaError;
 import com.socrata.model.soql.SoqlQuery;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,7 +13,7 @@ import java.util.List;
 /**
  * Created by alex on 25.10.2016.
  */
-
+@Component
 public class SodaService {
     private Soda2Consumer consumer = Soda2Consumer.newConsumer("https://data.sfgov.org");
 
